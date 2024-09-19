@@ -3,11 +3,35 @@
 <head>
   <title>Lab 2</title>
   <meta charset="utf-8" />
+  <link rel="stylesheet" href="New Text Document.css">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css" />
   <link rel="stylesheet" media="screen" href="css/screen.css" />
 </head>
 <body>
+<h3>User Form</h3>
+<div>
+<form>
+    <label for="fname">email</label>
+    <input type="text" id="em" name="email" placeholder="Your email..">
 
+    <label for="lname">Phone number</label>
+    <input type="text" id="num" name="phonnum" placeholder="Your number..">
+	
+	<label for="lname">brithday</label>
+    <input type="text" id="bd" name="brithday" placeholder="Your brithday..">
+  
+  
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+ </form>
+</div>
 </body>
 </html>
