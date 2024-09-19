@@ -11,28 +11,33 @@
 <body>
 <h3>User Form</h3>
 <div>
-<form>
-    <label for="fname">email</label>
-    <input type="text" id="em" name="email" placeholder="Your email..">
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="lname">Phone number</label>
-    <input type="text" id="num" name="phonnum" placeholder="Your number..">
-	
-	<label for="lname">brithday</label>
-    <input type="text" id="bd" name="brithday" placeholder="Your brithday..">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
   
-  
-<button onclick="myFunction()">Click me</button>
+
+  </form>
+</div>
+<input type="submit" value="Submit" onclick="myFunction()">
+
 
 <p id="demo"></p>
 
-
- </form>
- <script>
+<script>
 function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }
 </script>
-</div>
+
 </body>
 </html>
